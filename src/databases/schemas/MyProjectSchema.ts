@@ -1,0 +1,45 @@
+import { ObjectSchema } from 'realm';
+
+export type TMyProject = {
+  id: number,
+  coordinator: number,
+  name: string,
+  initials: string,
+  category: string,
+  objective: string,
+  level_detail: string,
+  scale: string,
+  mapped_area: string,
+  open_at: Date,
+  expected_closing_at: Date,
+  closing_at: null,
+  publicity: string,
+  created_at: Date,
+  updated_at: Date,
+  scale_secondary: string,
+  type_area: string,
+}
+
+export const MyProjectSchema: ObjectSchema = {
+  name: "MyProject",
+  properties: {
+    id: "int",
+    coordinator: "int",
+    name: "string",
+    initials: "string?",
+    category: "string?",
+    objective: "string?",
+    level_detail: "string?",
+    scale: "string?",
+    mapped_area: "string?",
+    open_at: "date?",
+    expected_closing_at: "date?",
+    closing_at: "date?",
+    publicity: "string?",
+    created_at: "date?",
+    updated_at: "date?",
+    scale_secondary: "string?",
+    type_area: "string?",
+  },
+  primaryKey: "id",
+}
