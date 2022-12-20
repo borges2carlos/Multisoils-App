@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "multisoils",
+    "slug": "multisoils",
+    "version": "1.0.0",
+    "plugins": ["expo-image-picker"],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
